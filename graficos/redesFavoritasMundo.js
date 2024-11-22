@@ -19,6 +19,7 @@ async function redesFavoritasMundo () {
     const layout = {
         plot_bgcolor: getCSS('--bg-color'),
         paper_bgcolor: getCSS('--bg-color'),
+        height: 700, 
         tittle: {
             text: 'Redes sociais que os usuários mais gostam',
             x: 0,
@@ -36,10 +37,7 @@ async function redesFavoritasMundo () {
        },
     };
 
-    const grafico = document.createElement('div');
-    grafico.className = 'grafico';
-    document.getElementById('graficos-container').appendChild(grafico);
-    Plotly.newPlot(grafico, data, layout);
+   criarGrafico (data, layout)
 }
 
 redesFavoritasMundo ();
