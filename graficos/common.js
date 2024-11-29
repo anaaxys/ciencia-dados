@@ -26,5 +26,3 @@ function incluirTexto (texto) {
     paragrafo.innerHTML = texto
     container.appendChild(paragrafo)
 }
-
-export {getCSS, tickConfig, criarGrafico, incluirTexto}

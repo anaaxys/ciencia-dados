@@ -1,4 +1,3 @@
-import { getCSS, criarGrafico, incluirTexto } from "./common.js";
 
 async function redesFavoritasMundo () {
     const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/redes-favoritas.json';
@@ -31,7 +30,7 @@ async function redesFavoritasMundo () {
         },
        legend: {
             font: {
-                color: getCSS (--primary-color),
+                color: getCSS("--primary-color"),
                 size: 16
             }
        }
